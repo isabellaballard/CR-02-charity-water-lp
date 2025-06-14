@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hero Section Example</title>
+  <style>
+    /* Set the background color for the whole page */
+    body {
+      background-color: #f9f5ee;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the hero section */
+    .hero-section {
+      /* Add some space above and below */
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+      /* Use a dark background color in case the image doesn't load */
+      background-color: #333;
+      /* Set position to relative for the overlay */
+      position: relative;
+    }
+
+    /* Make the hero image fill the section */
+    .hero-image {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      opacity: 0.85; /* Make the image a bit see-through for text */
+    }
+
+    /* Put the text on top of the image */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-width: 600px;
+    }
+
+    /* Make sure the hero section is tall enough */
+    .hero-section {
+      min-height: 320px;
+    }
+
+    /* Responsive: Stack everything on small screens */
+    @media (max-width: 600px) {
+      .hero-text {
+        font-size: 1em;
+      }
+      .hero-section {
+        min-height: 220px;
+        padding: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero section starts here -->
+  <div class="hero-section">
+    <!-- Show the image using an <img> tag -->
+    <img 
+      class="hero-image"
+      src="https://cdn2.dropmarkusercontent.com/52043/95ef84d11835094c1a520f88d37c50bdb304b7ee797a8be5535e1614c89e3b90/preview/Madagascar_2019_CG-4246.jpg"
+      alt="Clean water project"
+    >
+    <!-- Text goes on top of the image -->
+    <div class="hero-text">
+      <h1>See Your Impact Flow</h1>
+      <p>Your support brings clean water to communities in need.</p>
+    </div>
+  </div>
+</body>
+</html>

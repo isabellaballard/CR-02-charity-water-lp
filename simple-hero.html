@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Hero Section</title>
+  <style>
+    /* Style the body with a light background color */
+    body {
+      background-color: #f9f5ee;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the hero section */
+    .hero-section {
+      /* Add a background image */
+      background-image: url('https://cdn2.dropmarkusercontent.com/52043/95ef84d11835094c1a520f88d37c50bdb304b7ee797a8be5535e1614c89e3b90/preview/Madagascar_2019_CG-4246.jpg?Expires=1749846269&Signature=dle4vGubWET11cujZ-KT-bUaHxu4ItHhjeSnMVvY9rHREHdiI8tVIdxlLYVXnToT78rNKWW6nNO1ETkhXId5eKPLWHnbDlwCxFv-jOJqybpE1VRiOPv9eRzUcjhA63lMPUvOZWn9b2vR5yRkncOPToaTCgvtHcZWBjXbbU2QNkSwDbUIGaEtfq4wLenL0NaBJlYI0Y1WDCrnLIWgwC5S1vGe9AEId4hIFjVKTZJjUFYA3c-o-sjF9J67GCPpyXFuL0Aj2mF80pG-QcVTe0NYe0KmxCcJVpiOM6OYgGWzhMegkUAXz4CleLdngDSwE4sfVdvelo7pflR16UhP8Lw2Ug__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ');
+      background-size: cover; /* Make the image cover the section */
+      background-position: center; /* Center the image */
+      height: 300px; /* Set the height of the hero section */
+      position: relative; /* Needed for the overlay */
+      color: white; /* Make text white for contrast */
+      text-align: center; /* Center the text */
+      display: flex; /* Use flex to center content vertically */
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+    }
+
+    /* Add a simple overlay for better text readability */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3); /* Semi-transparent black */
+      z-index: 1;
+    }
+
+    /* Make sure the content is above the overlay */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Style the headline */
+    .hero-title {
+      font-size: 2em;
+      margin: 0.5em 0 0.2em 0;
+    }
+
+    /* Style the subheadline */
+    .hero-subtitle {
+      font-size: 1.1em;
+      margin: 0 0 1em 0;
+    }
+
+    /* Style the button */
+    .hero-button {
+      background-color: #4f8cff;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .hero-button:hover {
+      background-color: #256be6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero section with a background image -->
+  <div class="hero-section">
+    <!-- Content goes here -->
+    <div class="hero-content">
+      <h1 class="hero-title">See Your Impact Flow</h1>
+      <p class="hero-subtitle">Your support brings clean water to communities in need.</p>
+      <button class="hero-button">Donate Now</button>
+    </div>
+  </div>
+</body>
+</html>
